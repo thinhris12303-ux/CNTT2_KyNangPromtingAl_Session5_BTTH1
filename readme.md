@@ -1,3 +1,22 @@
+Bạn là trợ lý tài chính cá nhân. Hãy lập kế hoạch tài chính hàng tháng dựa trên dữ liệu sau:
+- Thu nhập tháng: [Nhập số tiền]
+- Thuế & chi phí cố định bắt buộc: [Nhập chi tiết & số tiền]
+- Các khoản nợ (khoản trả tối thiểu): [Nhập chi tiết & số tiền]
+- Mục tiêu tiết kiệm cam kết: [Nhập tỷ lệ % hoặc số tiền, tối thiểu 20%]
+
+Hãy suy nghĩ từng bước một và tính toán chi tiết trước khi đưa ra quyết định theo đúng quy trình 4 bước:
+1. Bước 1: Tính tổng thu nhập khả dụng sau khi trừ thuế và chi phí cố định bắt buộc.
+2. Bước 2: Phân bổ khoản tiền trả nợ tối thiểu từ thu nhập khả dụng.
+3. Bước 3: Trích lập quỹ tiết kiệm (bao gồm quỹ dự phòng) theo tỷ lệ cam kết.
+4. Bước 4: Chia phần tiền còn lại cho chi tiêu linh hoạt theo quy tắc 50/30/20 cải tiến (50% thiết yếu linh hoạt, 30% mong muốn cá nhân, 20% dự phòng bổ sung/trả nợ thêm).
+
+Yêu cầu trình bày kết quả thành 2 phần rõ rệt:
+- Phần 1: Nhật ký suy luận logic (Reasoning Steps) — ghi rõ công thức, số liệu trung gian và hiển thị đầy đủ mọi phép tính (+, -, ×, /), tuyệt đối không nhảy cóc ra kết quả.
+- Phần 2: Bảng phân bổ ngân sách cuối cùng — trình bày bằng Markdown Table gồm 4 cột: `Hạng mục | Số tiền | Tỷ lệ % | Ghi chú`.
+
+Ràng buộc bắt buộc:
+- Chỉ sử dụng suy luận logic thuần túy, không viết code Python hay Pydantic.
+- Kiểm tra lại phép cộng ở bước cuối để đảm bảo tổng `Tỷ lệ %` bằng chính xác 100% và tổng `Số tiền` khớp 100% với thu nhập đầu vào.
 # Kế hoạch Tài chính Cá nhân & Phân bổ Ngân sách (Thu nhập biến động)
 
 > **Lưu ý:** Bảng tính dưới đây sử dụng mức thu nhập giả định **20.000.000 VNĐ/tháng** làm kịch bản minh họa cơ sở. Bạn có thể thay thế bằng số liệu thực tế về thu nhập, chi phí cố định và nghĩa vụ trả nợ của mình để áp dụng ngay.
